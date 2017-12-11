@@ -5,47 +5,62 @@ body {
 .title{
   background-color: #00bd75;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   letter-spacing: 2px;
-  padding: 5px;
-}
-
-.footer {
-  color: #ffffff;
-  background-color: #00bd75;
-  font-size: 1.5rem;
-  text-align: center;
-  letter-spacing: 2px;
-  padding: 5px;
+  padding: 3px;
 }
 
 .background {
   background-image: url("../assets/images/sunny-day.jpg");
-  background-position: center 50%;
+  background-repeat: no-repeat;
+  background-position: center 55%;
   width: 100%;
-  height: 600px;
+  height: 588px;
 }
 
 .kitten  {
-  background-image: url(../assets/images/kitten-medium.png);
-  background-repeat: no-repeat;
-  background-position: center 50%;
-  width: 60%;
-  height: 600px;
-  margin-top: 20%;
- /* width: 60%;*/
-  height: 350px;
+  content: url(../assets/images/kitten-medium.png);
+  width: 40%;
+  margin-top: 25%;
+  text-align: center;
+  height: 50%;
+  margin-left: 28%;
+}
 
-}
 /* ----------------- Para ordenadores ----------------- */
+@media screen and (max-width: 1200px) {
+  .background {
+    background-image: url("../assets/images/sunny-day.jpg");
+  }
+  .kitten {
+    content: url(../assets/images/kitten-medium.png);
+  }
+}
+
+/* ----------------- Para Tablets ----------------- */
 @media screen and (max-width: 992px) {
-  
-   
-  
+  .background {
+    background-image: url("../assets/images/night.jpg");
+  }
+  .kitten {
+    content: url(../assets/images/kitten-small.png);
+  }
 }
-/* ----------------- Para tablets ----------------- */
+/* ----------------- Para Telefonos ----------------- */
 @media screen and (max-width: 768px) {
-  
-  
+  .background {
+    background-image: url("../assets/images/dawn.png");
+    height: 500px;
+  }
+  .kitten {
+    content: url(../assets/images/kitten-large.png);
+    width: 80%;
+    height: 50%;
+    margin-left: 8%;
+    margin-top: 55%;
+  } 
 }
+
+
+
