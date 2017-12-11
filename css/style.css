@@ -28,6 +28,18 @@ body {
   margin-left: 28%;
 }
 
+.kitten-text {
+  position: absolute;
+  top: 78%;
+  font-size: 2.5rem;
+  margin-left: 45%;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
 /* ----------------- Para ordenadores ----------------- */
 @media screen and (max-width: 1200px) {
   .background {
